@@ -1,0 +1,270 @@
+*{
+margin: 0;
+padding: 0;
+}
+.container {
+height: 100vh;
+width: 100%;
+background-image: url('http://www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg');
+background-position: center;
+background-size: cover;
+padding-left: 5%;
+padding-right: 5%;
+box-sizing: border-box;
+position:relative;
+}
+.navbar{
+    width: 100%;
+    height: 25vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 280px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    padding-left: 80px;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-shadow: black;
+}
+.box {
+	display: flex;
+   
+    
+}
+
+.box .inner {
+	width: 300px;
+	height: 200px;
+	line-height: 200px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+    left: 10px;
+}
+
+.box .inner:first-child {
+	background-color: #6c6c6c;
+	color: #080806;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: #fbfb53;
+	color: #080806;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+.page-wrapper{
+    background-image: url("https://i.pinimg.com/564x/b0/2a/e2/b02ae2523a2c395bab1d7828492338bd.jpg");
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+.content h1{
+font-size: 50px;
+font-weight: 100;
+margin-top: 24px;
+margin-bottom: 15px;
+color: black;
+text-shadow: black;
+
+}
+.navbar .btn{
+    display: inline-block;
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    box-shadow: black;
+}
+.feature-image{
+height: 80%;
+position:relative;
+left: 700px;
+top:-300px;
+
+}
+
+.page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 4vw;
+    line-height: 1.1;
+    color:black;
+    text-shadow: yellow;
+  }
+  
+  .page-section > div {
+    flex: 0 0 77%;
+  }
+  
+  .page-section p {
+    margin-bottom: 20px;
+    font-size: large;
+  }
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    border: 5px solid var(--secondary);
+    background-color: var(--primary);
+    color: var(--tertiary);
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+  .flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+.flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .flex-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
+  
+  .contact address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .contact address a {
+    color: var(--tertiary);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: normal;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+  }
+  
+  .contact address a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+  }
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+      }
+    
+      header nav {
+        justify-content: center;
+      }
+    
+      .page-section > h2,
+      .page-section > div {
+        flex: 0 0 100%;
+      }
+    
+      .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      .flex-item,
+      .flex-item:first-child {
+        flex-basis: 100%;
+      }
+    
+      .flex-item:first-child {
+        min-height: 150px;
+      }
+    
+      .hero-banner {
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .contact address {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    .run-buddy {
+        background-image: url("file:///Users/calebportales/Desktop/UCLA/02-Advanced-CSS/02-Challenge/Main/assets/images/02-run-buddy.jpg");
+      }
+      
